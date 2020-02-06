@@ -6,21 +6,34 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 4rem;
 
     &__brand {
         font-size: 3rem;
         font-weight: 600;
+        padding: 0.5rem 4rem;
     }
 
     &__nav {
         display: flex;
         align-items: center;
+        align-self: stretch;
 
         &-link {
-            margin-right: 4rem;
             font-size: 1.5rem;
             font-weight: 600;
+            padding: 1.5rem 3rem;
+            transition: 500ms all;
+            align-self: stretch;
+            display: flex;
+            align-items: center;
+
+            &--active {
+                background: rgba(255, 255, 255, 0.3);
+            }
+        }
+
+        &-user-menu {
+            padding: 0.5rem 4rem;
         }
     }
 }
