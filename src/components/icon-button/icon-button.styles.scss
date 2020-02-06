@@ -1,0 +1,28 @@
+@import '../../App.scss';
+
+.icon-button {
+    background: $primary-color;
+    border: none;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 50%;
+    font-size: 1.7rem;
+    font-weight: 300;
+    width: 5.5rem;
+    height: 5.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+
+    &:disabled {
+        cursor: not-allowed;
+        background-color: $primary-light-color;
+        color: #000;
+    }
+
+    &:active {
+        transform: translateY(2px);
+    }
+}

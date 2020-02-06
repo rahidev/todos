@@ -1,0 +1,16 @@
+@import '../../App.scss';
+
+.todo {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+
+    &:nth-child(odd) {
+        background-color: $primary-light-color;
+    }
+
+    &:nth-child(even) {
+        border: 1px solid $primary-color;
+    }
+}

@@ -1,0 +1,17 @@
+.user-todos {
+    padding: 2.5rem 3.5rem;
+
+    &__title {
+        font-size: 2.3rem;
+        color: #333;
+    }
+
+    &__todos {
+        margin-top: 2.5rem;
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: space-between;
+    }
+}

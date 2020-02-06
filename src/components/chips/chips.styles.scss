@@ -1,3 +1,5 @@
+@import '../../App.scss';
+
 .chips {
     padding: 0.8rem 2.5rem;
     display: inline-block;
@@ -5,10 +7,10 @@
     font-size: 1.3rem;
 
     &--primary {
-        background: #e9f3ff;
+        background: $primary-light-color;
     }
 
     &--danger {
-        background-color: #ffe9f1;
+        background-color: $danger-color;
     }
 }
