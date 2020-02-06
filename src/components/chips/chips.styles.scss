@@ -1,0 +1,14 @@
+.chips {
+    padding: 0.8rem 2.5rem;
+    display: inline-block;
+    border-radius: 200rem;
+    font-size: 1.3rem;
+
+    &--primary {
+        background: #e9f3ff;
+    }
+
+    &--danger {
+        background-color: #ffe9f1;
+    }
+}

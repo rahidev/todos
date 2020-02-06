@@ -1,0 +1,15 @@
+.qod {
+    margin: 0 1rem;
+    margin-top: 2rem;
+    line-height: 1.6;
+
+    &__heading {
+        font-size: 2rem;
+        color: #333;
+    }
+
+    &__quote {
+        font-size: 1.7rem;
+        color: #777;
+    }
+}

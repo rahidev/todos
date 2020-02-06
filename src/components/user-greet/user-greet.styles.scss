@@ -1,0 +1,31 @@
+.user-greet {
+    padding: 2rem 3rem;
+
+    &__user {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        &-greet {
+            margin-left: 3rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+
+            &-name {
+                font-size: 3rem;
+            }
+
+            &-msg {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    &__chips {
+        display: flex;
+
+        .chips {
+            margin-right: 2rem;
+        }
+    }
+}

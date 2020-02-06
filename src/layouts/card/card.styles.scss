@@ -1,0 +1,9 @@
+@import '../../App.scss';
+
+.card {
+    width: 45rem;
+    height: 45rem;
+    box-shadow: $base-shadow;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+}
