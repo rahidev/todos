@@ -1,0 +1,26 @@
+@import '../../App.scss';
+
+.header {
+    background-color: $primary-color;
+    box-shadow: $base-shadow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 4rem;
+
+    &__brand {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+
+        &-link {
+            margin-right: 4rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+    }
+}
