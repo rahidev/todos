@@ -1,0 +1,15 @@
+.update-todo {
+    padding: 2.5rem 4rem;
+
+    &__heading {
+        margin-bottom: 2rem;
+        font-size: 2.6rem;
+        color: #555;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4rem;
+    }
+}

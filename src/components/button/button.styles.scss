@@ -1,0 +1,27 @@
+@import '../../App.scss';
+
+.button {
+    border: 0;
+    padding: 1.2rem 3.5rem;
+    cursor: pointer;
+    outline: none;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 1.7rem;
+
+    &--primary {
+        background-color: $primary-color;
+    }
+
+    &--danger {
+        background-color: $danger-color;
+    }
+
+    &--warning {
+        background-color: $warning-color;
+    }
+
+    &:active {
+        transform: translateY(2px);
+    }
+}

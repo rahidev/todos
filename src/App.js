@@ -4,24 +4,12 @@ import { Switch, Route } from 'react-router-dom';
 
 import Container from './layouts/container/container.component';
 import HomePage from './pages/homepage/homepage.component';
-import NewTodo from './pages/new-todo/new-todo.component';
+import NewTodoPage from './pages/new-todo-page/new-todo-page.component';
+import UpdateTodoPage from './pages/update-todo-page/update-todo-page.component';
 
 import './App.scss';
 
 class App extends Component {
-    // state = {
-    //     quote: ''
-    // };
-
-    // componentDidMount() {
-    //     const getQuote = async () => {
-    //         const res = await fetch('http://quotes.rest/qod.json');
-    //         const data = await res.json();
-    //         this.setState({ quote: data.contents.quotes[0].quote });
-    //     };
-    //     getQuote();
-    // }
-
     render() {
         return (
             <div className="App">
@@ -30,7 +18,12 @@ class App extends Component {
                 <Container>
                     <Switch>
                         <Route exact path="/" component={HomePage} />
-                        <Route exact path="/newTodo" component={NewTodo} />
+                        <Route exact path="/newTodo" component={NewTodoPage} />
+                        <Route
+                            exact
+                            path="/updateTodo/:id"
+                            component={UpdateTodoPage}
+                        />
                     </Switch>
                 </Container>
             </div>

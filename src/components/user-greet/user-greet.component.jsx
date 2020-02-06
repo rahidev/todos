@@ -14,6 +14,22 @@ const UserGreet = props => {
         return `${date} ${month}, ${year}`;
     };
 
+    const getGreet = () => {
+        const time = new Date().getHours();
+        switch (true) {
+            case time >= 0 && time < 12:
+                return 'Good Morning';
+            case time >= 12 && time < 18:
+                return 'Good Afternoon';
+            case time >= 18 && time < 20:
+                return 'Good Evening';
+            case time >= 20 && time <= 24:
+                return 'Good Night';
+            default:
+                return 'Not Working';
+        }
+    };
+
     return (
         <Card>
             <div className="user-greet">
@@ -29,13 +45,15 @@ const UserGreet = props => {
                             Hi, Jane!
                         </h1>
                         <h2 className="user-greet__user-greet-msg">
-                            Good Morning!
+                            {getGreet()}!
                         </h2>
                     </div>
                 </div>
                 <div className="user-greet__chips">
                     <Chips>{getFormattedDate()}</Chips>
-                    <Chips type="danger">7 Task For Today</Chips>
+                    <Chips type="danger">
+                        {props.todosLength} Task For Today
+                    </Chips>
                 </div>
                 <Qod />
             </div>

@@ -1,0 +1,11 @@
+@import '../../App.scss';
+
+.input {
+    padding: 1.5rem 3rem;
+    width: 100%;
+    border: none;
+    box-shadow: $base-shadow;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1.7rem;
+}
